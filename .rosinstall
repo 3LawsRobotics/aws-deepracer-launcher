@@ -14,10 +14,10 @@
     uri: https://github.com/aws-deepracer/aws-deepracer-i2c-pkg.git
     local-name: aws-deepracer-i2c-pkg
     version: main
-- git:
-    uri: https://github.com/aws-deepracer/aws-deepracer-inference-pkg.git
-    local-name: aws-deepracer-inference-pkg
-    version: main
+# - git:
+#     uri: https://github.com/aws-deepracer/aws-deepracer-inference-pkg.git
+#     local-name: aws-deepracer-inference-pkg
+#     version: main
 - git:
     uri: https://github.com/aws-deepracer/aws-deepracer-interfaces-pkg.git
     local-name: aws-deepracer-interfaces-pkg

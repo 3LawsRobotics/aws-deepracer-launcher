@@ -20,7 +20,7 @@
   <depend>deepracer_systems_pkg</depend>
   <depend>device_info_pkg</depend>
   <depend>i2c_pkg</depend>
-  <depend>inference_pkg</depend>
+  <!-- <depend>inference_pkg</depend> -->
   <depend>model_optimizer_pkg</depend>
   <depend>rplidar_ros</depend>
   <depend>sensor_fusion_pkg</depend>
