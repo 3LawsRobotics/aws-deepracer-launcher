@@ -2,12 +2,12 @@
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
-echo "Cloning the async_web_server_cpp package"
-cd $SCRIPT_DIR
-git clone https://github.com/GT-RAIL/async_web_server_cpp.git
-cd async_web_server_cpp
-git checkout ros2
-apt-get install -y python3-websocket
+# echo "Cloning the async_web_server_cpp package"
+# cd $SCRIPT_DIR
+# git clone https://github.com/GT-RAIL/async_web_server_cpp.git
+# cd async_web_server_cpp
+# git checkout ros2
+# apt-get install -y python3-websocket
 echo ""
 echo "Cloning the web_video_server package"
 cd $SCRIPT_DIR
