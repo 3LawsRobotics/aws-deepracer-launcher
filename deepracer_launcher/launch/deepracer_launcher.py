@@ -123,12 +123,12 @@ def generate_launch_description():
         executable='usb_monitor_node',
         name='usb_monitor_node',
     )
-    webserver_publisher_node = Node(
-        package='webserver_pkg',
-        namespace='webserver_pkg',
-        executable='webserver_publisher_node',
-        name='webserver_publisher_node',
-    )
+    # webserver_publisher_node = Node(
+    #     package='webserver_pkg',
+    #     namespace='webserver_pkg',
+    #     executable='webserver_publisher_node',
+    #     name='webserver_publisher_node',
+    # )
     web_video_server_node = Node(
         package='web_video_server',
         namespace='web_video_server',
