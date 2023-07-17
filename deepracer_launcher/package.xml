@@ -14,21 +14,21 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <depend>camera_pkg</depend>
-  <depend>ctrl_pkg</depend>
-  <depend>deepracer_navigation_pkg</depend>
-  <depend>deepracer_systems_pkg</depend>
-  <depend>device_info_pkg</depend>
-  <depend>i2c_pkg</depend>
+  <!-- <depend>camera_pkg</depend> -->
+  <!-- <depend>ctrl_pkg</depend> -->
+  <!-- <depend>deepracer_navigation_pkg</depend> -->
+  <!-- <depend>deepracer_systems_pkg</depend> -->
+  <!-- <depend>device_info_pkg</depend> -->
+  <!-- <depend>i2c_pkg</depend> -->
   <!-- <depend>inference_pkg</depend> -->
-  <depend>model_optimizer_pkg</depend>
+  <!-- <depend>model_optimizer_pkg</depend> -->
   <depend>rplidar_ros</depend>
-  <depend>sensor_fusion_pkg</depend>
+  <!-- <depend>sensor_fusion_pkg</depend> -->
   <depend>servo_pkg</depend>
   <depend>status_led_pkg</depend>
-  <depend>usb_monitor_pkg</depend>
+  <!-- <depend>usb_monitor_pkg</depend> -->
   <!-- <depend>webserver_pkg</depend> -->
-  <depend>web_video_server</depend>
+  <!-- <depend>web_video_server</depend> -->
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 

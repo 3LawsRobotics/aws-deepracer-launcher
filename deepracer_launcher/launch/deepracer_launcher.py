@@ -20,121 +20,130 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     ld = LaunchDescription()
-    camera_node = Node(
-        package='camera_pkg',
-        namespace='camera_pkg',
-        executable='camera_node',
-        name='camera_node',
-        parameters=[{'resize_images': True}],
-    )
-    ctrl_node = Node(
-        package='ctrl_pkg', namespace='ctrl_pkg', executable='ctrl_node', name='ctrl_node'
-    )
-    deepracer_navigation_node = Node(
-        package='deepracer_navigation_pkg',
-        namespace='deepracer_navigation_pkg',
-        executable='deepracer_navigation_node',
-        name='deepracer_navigation_node',
-    )
-    software_update_node = Node(
-        package='deepracer_systems_pkg',
-        namespace='deepracer_systems_pkg',
-        executable='software_update_node',
-        name='software_update_node',
-    )
-    model_loader_node = Node(
-        package='deepracer_systems_pkg',
-        namespace='deepracer_systems_pkg',
-        executable='model_loader_node',
-        name='model_loader_node',
-    )
-    otg_control_node = Node(
-        package='deepracer_systems_pkg',
-        namespace='deepracer_systems_pkg',
-        executable='otg_control_node',
-        name='otg_control_node',
-    )
-    network_monitor_node = Node(
-        package='deepracer_systems_pkg',
-        namespace='deepracer_systems_pkg',
-        executable='network_monitor_node',
-        name='network_monitor_node',
-    )
-    deepracer_systems_scripts_node = Node(
-        package='deepracer_systems_pkg',
-        namespace='deepracer_systems_pkg',
-        executable='deepracer_systems_scripts_node',
-        name='deepracer_systems_scripts_node',
-    )
+    # camera_node = Node(
+    #     package="camera_pkg",
+    #     namespace="camera_pkg",
+    #     executable="camera_node",
+    #     name="camera_node",
+    #     parameters=[{"resize_images": True}],
+    # )
+    # ctrl_node = Node(
+    #     package="ctrl_pkg",
+    #     namespace="ctrl_pkg",
+    #     executable="ctrl_node",
+    #     name="ctrl_node",
+    # )
+    # deepracer_navigation_node = Node(
+    #     package="deepracer_navigation_pkg",
+    #     namespace="deepracer_navigation_pkg",
+    #     executable="deepracer_navigation_node",
+    #     name="deepracer_navigation_node",
+    # )
+    # software_update_node = Node(
+    #     package="deepracer_systems_pkg",
+    #     namespace="deepracer_systems_pkg",
+    #     executable="software_update_node",
+    #     name="software_update_node",
+    # )
+    # model_loader_node = Node(
+    #     package="deepracer_systems_pkg",
+    #     namespace="deepracer_systems_pkg",
+    #     executable="model_loader_node",
+    #     name="model_loader_node",
+    # )
+    # otg_control_node = Node(
+    #     package="deepracer_systems_pkg",
+    #     namespace="deepracer_systems_pkg",
+    #     executable="otg_control_node",
+    #     name="otg_control_node",
+    # )
+    # network_monitor_node = Node(
+    #     package="deepracer_systems_pkg",
+    #     namespace="deepracer_systems_pkg",
+    #     executable="network_monitor_node",
+    #     name="network_monitor_node",
+    # )
+    # deepracer_systems_scripts_node = Node(
+    #     package="deepracer_systems_pkg",
+    #     namespace="deepracer_systems_pkg",
+    #     executable="deepracer_systems_scripts_node",
+    #     name="deepracer_systems_scripts_node",
+    # )
     device_info_node = Node(
-        package='device_info_pkg',
-        namespace='device_info_pkg',
-        executable='device_info_node',
-        name='device_info_node',
+        package="device_info_pkg",
+        namespace="device_info_pkg",
+        executable="device_info_node",
+        name="device_info_node",
     )
-    battery_node = Node(
-        package='i2c_pkg', namespace='i2c_pkg', executable='battery_node', name='battery_node'
-    )
+    # battery_node = Node(
+    #     package="i2c_pkg",
+    #     namespace="i2c_pkg",
+    #     executable="battery_node",
+    #     name="battery_node",
+    # )
     # inference_node = Node(
     #     package='inference_pkg',
     #     namespace='inference_pkg',
     #     executable='inference_node',
     #     name='inference_node'
     # )
-    model_optimizer_node = Node(
-        package='model_optimizer_pkg',
-        namespace='model_optimizer_pkg',
-        executable='model_optimizer_node',
-        name='model_optimizer_node',
-    )
+    # model_optimizer_node = Node(
+    #     package="model_optimizer_pkg",
+    #     namespace="model_optimizer_pkg",
+    #     executable="model_optimizer_node",
+    #     name="model_optimizer_node",
+    # )
     rplidar_node = Node(
-        package='rplidar_ros2',
-        namespace='rplidar_ros',
-        executable='rplidar_scan_publisher',
-        name='rplidar_scan_publisher',
+        package="rplidar_ros2",
+        namespace="rplidar_ros",
+        executable="rplidar_scan_publisher",
+        name="rplidar_scan_publisher",
         parameters=[
             {
-                'serial_port': '/dev/ttyUSB0',
-                'serial_baudrate': 1000000,
-                'frame_id': 'laser',
-                'inverted': False,
-                'angle_compensate': True,
+                "serial_port": "/dev/ttyUSB0",
+                "serial_baudrate": 1000000,
+                "frame_id": "laser",
+                "inverted": False,
+                "angle_compensate": True,
             }
         ],
     )
-    sensor_fusion_node = Node(
-        package='sensor_fusion_pkg',
-        namespace='sensor_fusion_pkg',
-        executable='sensor_fusion_node',
-        name='sensor_fusion_node',
-    )
+    # sensor_fusion_node = Node(
+    #     package="sensor_fusion_pkg",
+    #     namespace="sensor_fusion_pkg",
+    #     executable="sensor_fusion_node",
+    #     name="sensor_fusion_node",
+    # )
     servo_node = Node(
-        package='servo_pkg', namespace='servo_pkg', executable='servo_node', name='servo_node'
+        package="servo_pkg",
+        namespace="servo_pkg",
+        executable="servo_node",
+        name="servo_node",
     )
     status_led_node = Node(
-        package='status_led_pkg',
-        namespace='status_led_pkg',
-        executable='status_led_node',
-        name='status_led_node',
+        package="status_led_pkg",
+        namespace="status_led_pkg",
+        executable="status_led_node",
+        name="status_led_node",
     )
-    usb_monitor_node = Node(
-        package='usb_monitor_pkg',
-        namespace='usb_monitor_pkg',
-        executable='usb_monitor_node',
-        name='usb_monitor_node',
-    )
+    # usb_monitor_node = Node(
+    #     package="usb_monitor_pkg",
+    #     namespace="usb_monitor_pkg",
+    #     executable="usb_monitor_node",
+    #     name="usb_monitor_node",
+    # )
     # webserver_publisher_node = Node(
     #     package='webserver_pkg',
     #     namespace='webserver_pkg',
     #     executable='webserver_publisher_node',
     #     name='webserver_publisher_node',
     # )
-    web_video_server_node = Node(
-        package='web_video_server',
-        namespace='web_video_server',
-        executable='web_video_server',
-        name='web_video_server',
-    )
+    # web_video_server_node = Node(
+    #     package='web_video_server',
+    #     namespace='web_video_server',
+    #     executable='web_video_server',
+    #     name='web_video_server',
+    # )
     # ld.add_action(camera_node)
     # ld.add_action(ctrl_node)
     # ld.add_action(deepracer_navigation_node)
@@ -143,8 +152,8 @@ def generate_launch_description():
     # ld.add_action(otg_control_node)
     # ld.add_action(network_monitor_node)
     # ld.add_action(deepracer_systems_scripts_node)
-    ld.add_action(device_info_node)
-    ld.add_action(battery_node)
+    # ld.add_action(device_info_node)
+    # ld.add_action(battery_node)
     # ld.add_action(inference_node)
     # ld.add_action(model_optimizer_node)
     ld.add_action(rplidar_node)
