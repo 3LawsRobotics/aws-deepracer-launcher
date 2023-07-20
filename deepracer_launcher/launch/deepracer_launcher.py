@@ -75,12 +75,12 @@ def generate_launch_description():
         executable="device_info_node",
         name="device_info_node",
     )
-    # battery_node = Node(
-    #     package="i2c_pkg",
-    #     namespace="i2c_pkg",
-    #     executable="battery_node",
-    #     name="battery_node",
-    # )
+    battery_node = Node(
+        package="i2c_pkg",
+        namespace="i2c_pkg",
+        executable="battery_node",
+        name="battery_node",
+    )
     # inference_node = Node(
     #     package='inference_pkg',
     #     namespace='inference_pkg',
@@ -153,7 +153,7 @@ def generate_launch_description():
     # ld.add_action(network_monitor_node)
     # ld.add_action(deepracer_systems_scripts_node)
     # ld.add_action(device_info_node)
-    # ld.add_action(battery_node)
+    ld.add_action(battery_node)
     # ld.add_action(inference_node)
     # ld.add_action(model_optimizer_node)
     ld.add_action(rplidar_node)
