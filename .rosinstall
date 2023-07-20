@@ -10,7 +10,7 @@
 #    uri: https://github.com/aws-deepracer/aws-deepracer-device-info-pkg.git
 #    local-name: aws-deepracer-device-info-pkg
 #    version: main
- - git:
+- git:
     uri: https://github.com/aws-deepracer/aws-deepracer-i2c-pkg.git
     local-name: aws-deepracer-i2c-pkg
     version: main
